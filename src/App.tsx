@@ -28,7 +28,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename="/mimi">
+      <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
     </AppProvider>
