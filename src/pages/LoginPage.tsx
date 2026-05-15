@@ -31,10 +31,8 @@ export default function LoginPage() {
         <div className="animate-slide-up space-y-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-14 h-14 rounded-3xl flex items-center justify-center text-2xl"
-              style={{ background: 'linear-gradient(135deg,#FFB3C6,#FF4D6D)', boxShadow: '0 8px 24px rgba(255,77,109,0.4)' }}>
-              🌸
-            </div>
+            <img src="/logo.png" alt="Mimi Compta" className="w-14 h-14 rounded-3xl object-cover"
+              style={{ boxShadow: '0 8px 24px rgba(255,77,109,0.3)' }} />
             <div>
               <h1 className="text-2xl font-bold" style={{ color: '#FF4D6D' }}>Mimi Compta</h1>
               <p className="text-sm" style={{ color: '#c9a0b0' }}>Ton budget devient doux, clair et simple.</p>
@@ -87,10 +85,9 @@ export default function LoginPage() {
 
             {/* Avatar déco */}
             <div className="relative mx-auto w-24 h-24">
-              <div className="w-24 h-24 rounded-full flex items-center justify-center text-4xl"
-                style={{ background: 'linear-gradient(135deg,#FFE4EE,#FFB3C6)', boxShadow: '0 12px 40px rgba(255,143,171,0.3)' }}>
-                🌸
-              </div>
+              <img src="/logo.png" alt="Mimi Compta"
+                className="w-24 h-24 rounded-full object-cover"
+                style={{ boxShadow: '0 12px 40px rgba(255,143,171,0.3)' }} />
               <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full glass flex items-center justify-center">
                 <Sparkles size={14} style={{ color: '#FF6B8E' }} />
               </div>

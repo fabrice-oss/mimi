@@ -38,10 +38,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* Logo */}
         <div className="p-5 pb-4">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-2xl flex items-center justify-center text-lg"
-              style={{ background: 'linear-gradient(135deg,#FFB3C6,#FF6B8E)', boxShadow: '0 4px 12px rgba(255,107,142,0.4)' }}>
-              🌸
-            </div>
+            <img src="/logo.png" alt="Mimi Compta" className="w-9 h-9 rounded-2xl object-cover"
+              style={{ boxShadow: '0 4px 12px rgba(255,107,142,0.3)' }} />
             <div>
               <div className="font-bold text-base" style={{ color: '#FF4D6D' }}>Mimi Compta</div>
               <div className="text-xs" style={{ color: '#c9a0b0' }}>Ton budget, tout doux</div>
