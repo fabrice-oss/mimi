@@ -26,11 +26,7 @@ const GOAL_COLORS = [
   { label: 'Corail',  value: '#FB923C' },
 ];
 
-const DEFAULT_GOALS: Goal[] = [
-  { id: uuidv4(), name: 'Vacances été',     emoji: '🏖️', target: 2000, current: 1340, deadline: '2026-07-01', color: '#FF8FAB', description: 'Semaine en Grèce avec les copines' },
-  { id: uuidv4(), name: 'Fonds urgence',    emoji: '🐷', target: 5000, current: 2800, deadline: '2026-12-31', color: '#4ADE80', description: '3 mois de dépenses de côté' },
-  { id: uuidv4(), name: 'Nouveau MacBook',  emoji: '💻', target: 1500, current: 450,  deadline: '2026-09-01', color: '#60A5FA', description: 'Pour télétravail' },
-];
+const DEFAULT_GOALS: Goal[] = [];
 
 function getMimiGoalTip(goals: Goal[]): string {
   const totalProgress = goals.length > 0 ? goals.reduce((s, g) => s + (g.target > 0 ? g.current / g.target : 0), 0) / goals.length * 100 : 0;

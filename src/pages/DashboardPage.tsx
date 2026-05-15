@@ -133,7 +133,7 @@ export default function DashboardPage() {
       </div>
 
       {/* ── Graphiques ─── */}
-      <div className="grid lg:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
 
         {/* Évolution 6 mois */}
         <div className="glass-card-lg p-5 lg:col-span-2">
@@ -204,7 +204,7 @@ export default function DashboardPage() {
       </div>
 
       {/* ── Taux d'épargne + Budget ─── */}
-      <div className="grid lg:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
 
         {/* Taux d'épargne */}
         <div className="glass-card-lg p-5">
@@ -258,7 +258,7 @@ export default function DashboardPage() {
       </div>
 
       {/* ── Dernières transactions + Actions rapides ─── */}
-      <div className="grid lg:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
 
         {/* Transactions récentes */}
         <div className="glass-card-lg p-5 lg:col-span-2">
@@ -330,21 +330,6 @@ export default function DashboardPage() {
             ))}
           </div>
 
-          {/* Mini objectif */}
-          <div className="mt-4 p-3 rounded-2xl"
-            style={{ background: 'linear-gradient(135deg,rgba(255,179,198,0.2),rgba(212,170,255,0.15))', border: '1px solid rgba(255,179,198,0.3)' }}>
-            <div className="flex items-center justify-between text-xs mb-2">
-              <span className="font-semibold" style={{ color: '#FF6B8E' }}>🏖️ Objectif Vacances</span>
-              <span style={{ color: '#b89aaa' }}>67%</span>
-            </div>
-            <div className="progress-bar">
-              <div className="progress-fill" style={{ width: '67%' }} />
-            </div>
-            <div className="text-xs mt-1.5 flex justify-between" style={{ color: '#c9a0b0' }}>
-              <span>1 340 € / 2 000 €</span>
-              <button onClick={() => navigate('/objectifs')} className="text-xs font-medium" style={{ color: '#FF6B8E' }}>Voir →</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

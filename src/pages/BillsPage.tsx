@@ -31,14 +31,7 @@ const CATEGORIES = [
   { value: 'autre',        label: 'Autre',         icon: '📋', color: '#6b7280' },
 ];
 
-const DEFAULT_BILLS: Bill[] = [
-  { id: uuidv4(), name: 'Loyer',        category: 'logement',   amount: 850, dueDay: 1,  status: 'paid',     frequency: 'monthly', icon: '🏠', color: '#fbbf24' },
-  { id: uuidv4(), name: 'Électricité',  category: 'energie',    amount: 65,  dueDay: 10, status: 'upcoming', frequency: 'monthly', icon: '⚡', color: '#f59e0b' },
-  { id: uuidv4(), name: 'Fibre',        category: 'internet',   amount: 29,  dueDay: 15, status: 'upcoming', frequency: 'monthly', icon: '📡', color: '#3b82f6' },
-  { id: uuidv4(), name: 'Netflix',      category: 'streaming',  amount: 17,  dueDay: 20, status: 'upcoming', frequency: 'monthly', icon: '🎬', color: '#ec4899' },
-  { id: uuidv4(), name: 'Mutuelle',     category: 'sante',      amount: 45,  dueDay: 5,  status: 'paid',     frequency: 'monthly', icon: '💊', color: '#10b981' },
-  { id: uuidv4(), name: 'Assurance auto', category: 'assurance', amount: 62, dueDay: 28, status: 'late',    frequency: 'monthly', icon: '🛡️', color: '#8b5cf6' },
-];
+const DEFAULT_BILLS: Bill[] = [];
 
 const STATUS_CONFIG = {
   paid:     { label: 'Payé',    icon: CheckCircle2,  className: 'badge-paid' },
@@ -183,7 +176,7 @@ export default function BillsPage() {
       </div>
 
       {/* KPIs */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {[
           { label: 'Total mensuel', value: fmt(totalMonthly), color: '#3d1c2e',  bg: 'linear-gradient(135deg,#fce7f3,#fbcfe8)',  emoji: '🧾' },
           { label: 'Payées',       value: fmt(totalPaid),    color: '#065f46',  bg: 'linear-gradient(135deg,#d1fae5,#a7f3d0)',  emoji: '✅' },
